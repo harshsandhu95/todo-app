@@ -14,7 +14,7 @@ export default function App() {
   }, [todos]);
 
   return (
-    <main className="container max-w-3xl min-h-screen flex flex-col justify-center gap-2">
+    <main className="container max-w-3xl min-h-screen flex flex-col justify-center gap-4">
       <h1 className="text-3xl font-bold">Todos</h1>
       <div
         ref={todosRef}
