@@ -17,7 +17,7 @@ export default function Todo({ todo }: Props) {
   return (
     <form className="flex items-center gap-4">
       <Checkbox checked={checked} onCheckedChange={handleChecked} />
-      <p>{todo.task}</p>
+      <p className={checked ? "line-through" : ""}>{todo.task}</p>
     </form>
   );
 }
